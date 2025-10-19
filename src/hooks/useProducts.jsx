@@ -17,7 +17,7 @@ const useProducts = () => {
       setCategories(response.categories);
     } catch (error) {
       setError(true);
-      console.error("Error when fetching data:", error);
+      console.error("Error when fetching data:", error.message);
     } finally {
       setLoading(false);
     }
