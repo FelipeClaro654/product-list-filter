@@ -1,0 +1,14 @@
+{
+  "plugins": ["mocha"],
+  "env": {
+    "mocha": true,
+    "jest": true, // This enables Jest global variables
+    "node": true // You might also need node environment if running in Node.js
+  },
+  "ignorePatterns": ["**/*.test.js", "**/*.spec.js"],
+  "globals": {
+    "describe": "readonly",
+    "it": "readonly",
+    "beforeEach": "readonly"
+  }
+}
